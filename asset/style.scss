@@ -1,0 +1,382 @@
+$lightcolor:#fff;
+$darkcolor:#000;
+$greencolor:#27ae60;
+$lightcolor2:#f7f3f0;
+$greycolor2:#eee;
+$smallsize:16px;
+$mediumsize:18px;
+$largesize:40px;
+$lineheight:25px;
+$greycolor:#888;
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.header
+{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $lightcolor;
+    z-index: 99999;
+    padding: 5px;
+    overflow: hidden;
+    .header__logo 
+    {
+       
+        img 
+        {
+            width: 100px;
+        }
+    }
+    .nav 
+    {
+        text-align: right;
+        margin-top: 23px;
+        padding: 10px;
+        li 
+        {
+            display: inline-block;
+            list-style: none;
+            line-height: $lineheight;
+            margin-left: 30px;
+           
+            font-size: $mediumsize;
+            font-weight: 700;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            &:hover   .sub__nav 
+            {
+                transform: translateX(0%);
+            }
+            a
+            {
+                text-decoration: none;
+                color: $darkcolor;
+            }
+            .sub__nav 
+            {
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background: $greencolor;
+                transform: translateX(-100%);
+                transition: 0.4s;
+            }
+        }
+        li.changecolor a
+        {
+            color: $greencolor;
+        }
+    }
+    .nav__tablet 
+    {
+        text-align: right;
+        margin-top: 40px;
+        display: none;
+        li 
+        {
+           list-style: none;
+           display: inline-block;
+           cursor: pointer;
+           font-size: $mediumsize;
+           margin-left: 30px;
+           overflow: hidden;
+           padding-bottom: 5px;
+           position: relative;
+           &:hover .sub__nav 
+           {
+            transform: translateX(0);
+           }
+           .sub__nav 
+            {
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background: $greencolor;
+                transform: translateX(-100%);
+                transition: 0.4s;
+            }
+        }
+    }
+}
+.swiper  
+{
+    margin-top: 100px;
+    height: 87vh;
+    .swiper-slide 
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url("../asset/bookbackground2.png");
+      background-size:cover ;
+      background-repeat: no-repeat;
+      background-position: center;
+      .slider__left 
+      {
+          padding: 10px;
+          .author
+          {
+              padding-left: 5px;
+              color: $greycolor;
+              margin-bottom: 0px;
+          }
+          .slider__left-heading 
+          {
+              font-size: $largesize;
+              font-weight: 700;
+              margin-bottom: 10px;
+              line-height: 55px;
+              
+              color: $lightcolor;
+          }
+         .slider__about 
+         {
+             color: $lightcolor2;
+             opacity: 0.5;
+             line-height: $lineheight;
+             margin-bottom: 20px;
+             max-width: 350px;
+         }
+      }
+  
+    }
+   
+ .swiper-pagination 
+ {
+  .swiper-pagination-bullet 
+  {
+      background: $lightcolor;
+  }
+ }
+}
+.content
+{
+    height: 100vh;
+    padding: 10px;
+    overflow: hidden;
+    .best__book-sell
+    {
+        margin-top: 80px;
+        padding-left: 10px;
+        position: relative;
+        overflow: hidden;
+        width: 270px;
+        &:hover .sub__sell
+        {
+            transform: translateX(0%);
+        }
+        .best__book-heading 
+        {
+            color: $darkcolor;
+            font-size: 22px;
+            font-weight: 700;
+            overflow: hidden;
+           padding-bottom: 5px;
+           cursor: pointer;
+        }
+        .sub__sell
+        {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0%;
+            background:$greencolor;
+            transform: translateX(-100%);
+            transition: 0.4s;
+        }
+    }
+    .see__more-detail 
+    {
+        margin-top: 85px;
+        padding-right: 10px;
+        text-align: right;
+        cursor: pointer;
+        .see__more
+        {
+            color: $darkcolor;
+            font-size: 14px;
+            transition: 0.4s;
+            font-weight: 600;
+            &:hover 
+            {
+                color:$greencolor;
+            }
+        }
+     
+    }
+    .swiper2  
+    {
+        height: 300px;
+        margin-top: 20px;
+        padding: 15px;
+        position: relative;
+        .swiper-slide 
+        {
+            background: none;
+            overflow: hidden;
+            cursor: pointer;
+          
+            img 
+            {
+                width: 100%;
+                height: 100%;
+                transition: 0.4s;
+                z-index: 2;
+                
+            }
+            &:hover img 
+            {
+                transform: scale(0.4);
+            }
+            &:hover .sub__slide
+            {
+                transform: translateY(0%);
+            }
+            &:hover   .list__icon li
+            {
+                transform: translateX(0%);
+            }
+            &:hover .price__book
+            {
+                transform: translateX(0%);
+            }
+        }
+        .sub__slide
+        {
+            width: 100%;
+            position: absolute;
+            height: 30%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        
+            padding: 10px;
+            transform: translateY(100%);
+            transition: 0.4s;
+            
+            .slide__heading 
+            {
+                color: $darkcolor;
+                margin-bottom: 10px;
+                font-size: $smallsize;
+                margin-top: 10px;
+               
+            }
+            .author 
+            {
+                color: $darkcolor;
+                font-size: 12px;
+                opacity: 0.5;
+                margin-bottom: 10px;
+            }
+            .price 
+            {
+                color: $darkcolor;
+            }
+        }
+        .list__icon 
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+        
+            li 
+            {
+                list-style: none;
+                background: $greencolor;
+       
+                padding: 10px;
+                text-align: center;
+                color: $lightcolor;
+                transition: 0.4s;
+                transform: translateX(-100%);
+                i 
+                {
+                    font-size: $smallsize;
+                }
+                
+            }
+           
+            li.second__delay
+            {
+                transition-delay: 0.1s;
+            }
+        }
+        .price__book 
+        {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translateX(100%);
+            transition: 0.4s;
+            p 
+            {
+                font-size: 14px;
+            }
+        }
+    }
+  
+}
+
+.read__more
+{
+     line-height: 25px;
+     font-weight: 700;
+    color: #000;
+    padding: 10px 14px;
+    transition: color 0.4s linear;
+    width: 150px;
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: $smallsize;
+     border: 1px solid$greencolor;
+    z-index: 2;
+    color: $lightcolor;
+    overflow: hidden;
+}
+.read__more:hover 
+{
+    color: #fff;
+    
+}
+.read__more::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:$greencolor;
+    z-index: -2;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+
+
+}
+.read__more::before 
+{
+    transform: scaleX(0);
+}
+.read__more:hover::before 
+{
+    transform: scaleX(1);
+}
