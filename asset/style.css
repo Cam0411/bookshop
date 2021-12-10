@@ -105,7 +105,7 @@
 
 .swiper {
   margin-top: 100px;
-  height: 87vh;
+  height: 100vh;
 }
 
 .swiper .swiper-slide {
@@ -155,8 +155,7 @@
 }
 
 .content {
-  height: 100vh;
-  padding: 10px;
+  height: auto;
   overflow: hidden;
 }
 
@@ -215,7 +214,7 @@
 }
 
 .content .swiper2 {
-  height: 300px;
+  max-height: 300px;
   margin-top: 20px;
   padding: 15px;
   position: relative;
@@ -241,8 +240,8 @@
 }
 
 .content .swiper2 .swiper-slide:hover .sub__slide {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
 }
 
 .content .swiper2 .swiper-slide:hover .list__icon li {
@@ -271,9 +270,11 @@
 
 .content .swiper2 .sub__slide .slide__heading {
   color: #000;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   font-size: 16px;
   margin-top: 10px;
+  line-height: 25px;
+  margin-bottom: 5px;
 }
 
 .content .swiper2 .sub__slide .author {
@@ -296,13 +297,17 @@
 .content .swiper2 .list__icon li {
   list-style: none;
   background: #27ae60;
-  padding: 10px;
+  padding: 6px;
   text-align: center;
   color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+}
+
+.content .swiper2 .list__icon li:hover {
+  background: #000;
 }
 
 .content .swiper2 .list__icon li i {
@@ -326,6 +331,267 @@
 
 .content .swiper2 .price__book p {
   font-size: 14px;
+}
+
+.content .feature {
+  margin-top: 0px;
+  text-align: left;
+}
+
+.content .feature .feature__heading {
+  font-size: 22px;
+  padding-left: 10px;
+  position: relative;
+  overflow: hidden;
+  font-weight: 700;
+}
+
+.content .weekly__book {
+  background: #f8f9fa;
+  padding: 10px;
+  margin-top: 80px;
+}
+
+.content .weekly__book .swiper3 {
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.content .weekly__book .swiper3 .swiper-slide {
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  padding: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.content .weekly__book .swiper3 .swiper-slide:hover .weekly__price {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.content .weekly__book .swiper3 .swiper-slide:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.content .weekly__book .swiper3 img {
+  width: 30%;
+  height: 100%;
+}
+
+.content .weekly__book .swiper3 .weekly__content {
+  padding: 10px;
+}
+
+.content .weekly__book .swiper3 .weekly__content .weekly__heading {
+  margin-bottom: 5px;
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.content .weekly__book .swiper3 .weekly__content .author {
+  font-size: 16px;
+  color: #000;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.content .weekly__book .swiper3 .weekly__content .weekly__price {
+  margin-bottom: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 14px;
+  -webkit-transform: translateX(103%);
+          transform: translateX(103%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: #27ae60;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.content .weekly__book .swiper3 .weekly__content .weekly__price:hover {
+  background: #000;
+}
+
+.content .weekly__book .swiper3 .weekly__content .weekly__about {
+  line-height: 25px;
+}
+
+.content .popular__author {
+  height: auto;
+  padding: 10px;
+}
+
+.content .popular__author .popluar__heading {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.content .popular__author .author__content {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.content .popular__author .contain__box {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content .popular__author .contain__box:hover .sub__box {
+  opacity: 1;
+}
+
+.content .popular__author .contain__box img {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.content .popular__author .contain__box .sub__box {
+  background: #0004;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.content .popular__author .contain__box .sub__box:hover .sub__box-nav li {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.content .popular__author .contain__box .sub__box:hover .sub__box-heading {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.content .popular__author .contain__box .sub__box .sub__box-heading {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.content .popular__author .contain__box .sub__box .sub__box-nav li {
+  display: inline-block;
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #27ae60;
+  border-radius: 50%;
+  padding: 8px 10px;
+  -webkit-transform: translateY(600%);
+          transform: translateY(600%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.content .popular__author .contain__box .sub__box .sub__box-nav li.delay__1 {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.content .popular__author .contain__box .sub__box .sub__box-nav li.delay__2 {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.content .review__bookshops {
+  background: url("../asset/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  margin-top: 80px;
+  background-position: center;
+}
+
+.content .review__bookshops .review__content {
+  width: 100%;
+  height: 100%;
+  background: #0004;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+.content .review__bookshops .review__content .review {
+  color: #fff;
+  line-height: 25px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.content .review__bookshops .review__content .author {
+  color: #fff;
 }
 
 .read__more {
@@ -378,5 +644,13 @@
 .read__more:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+.read__more-2 {
+  color: #000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
