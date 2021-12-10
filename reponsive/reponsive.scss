@@ -2,6 +2,7 @@ $lightcolor:#fff;
 $darkcolor:#000;
 $greencolor:#27ae60;
 $lightcolor2:#f7f3f0;
+$lightcolor3:#f8f9fa;
 $smallsize:20px;
 $mediumsize:28px;
 $largesize:40px;
@@ -87,7 +88,7 @@ $greycolor:#888;
 }
 .swiper  
 {
-    height: 87vh;
+
     .swiper-slide 
     {
       .slider__left 
@@ -118,6 +119,7 @@ $greycolor:#888;
 }
 .content
     {
+        height: auto;
         .best__book-sell
         {
             margin-top: 80px;
@@ -132,7 +134,7 @@ $greycolor:#888;
             .best__book-heading 
             {
                 color: $darkcolor;
-                font-size: 14px;
+                font-size: 18px;
                 font-weight: 700;
                 overflow: hidden;
                padding-bottom: 5px;
@@ -168,6 +170,7 @@ $greycolor:#888;
             {
                 background: none;
                 overflow: hidden;
+              
                 cursor: pointer;
               
                 img 
@@ -177,22 +180,6 @@ $greycolor:#888;
                     transition: 0.4s;
                     z-index: 2;
                     
-                }
-                &:hover img 
-                {
-                    transform: scale(0.4);
-                }
-                &:hover .sub__slide
-                {
-                    transform: translateY(0%);
-                }
-                &:hover   .list__icon li
-                {
-                    transform: translateX(0%);
-                }
-                &:hover .price__book
-                {
-                    transform: translateX(0%);
                 }
             }
             .sub__slide
@@ -211,10 +198,10 @@ $greycolor:#888;
                 .slide__heading 
                 {
                     color: $darkcolor;
-                    margin-bottom: 10px;
+                    margin-bottom: 5px;
                     font-size: 14px;
                     margin-top: 10px;
-                   
+                   line-height: 20px;
                 }
                 .author 
                 {
@@ -270,19 +257,196 @@ $greycolor:#888;
                 }
             }
         }
+        .weekly__book
+        {
+            background: $lightcolor3;
+            padding: 10px;
+            margin-top: 80px;
+            .swiper3 
+            {
+              height: auto;
+              margin-top: 50px;
+              margin-bottom: 80px;
+              .swiper-slide 
+              {
+                  background: none;
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  background: $lightcolor;
+                  padding: 20px;
+                  overflow: hidden;
+                  flex-direction: column;
+                  cursor: pointer;
+                  transition: 0.4s;
+                  &:hover  .weekly__price
+                  {
+                      transform: translateX(0);
+                  }
+                  &:hover 
+                  {
+                      transform: scale(1.02);
+                  }
+              }
+                img 
+                {
+                    width: 179px;
+                    height: 250px;
+                   margin-bottom: 20px;
+                   margin-top: 40px;
+                }
+                .weekly__content
+                {
+                    padding: 10px;
+                    .weekly__heading 
+                    {
+                        margin-bottom: 5px;
+                        color: $greencolor;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+                    .author
+                    {
+                         font-size: $smallsize;
+                         color: $darkcolor;
+                         font-size: 12px;
+                         margin-bottom: 0px;
+                         line-height: $lineheight;
+                    }
+                    .weekly__price
+                    {
+                         margin-bottom: 10px;
+                         position: absolute;
+                         top: 0;
+                         right: 0;
+                         padding: 10px 14px;
+                         transform: translateX(100%);
+                         transition: 0.4s;
+                    }
+                    .weekly__about
+                    {
+                        line-height: $lineheight;
+                         font-size: 14px;
+                    }
+                }
+      
+            }
+        }
+       .popular__author
+       {
+           .popluar__heading
+           {
+               font-size: 18px;
+           }
+       } 
     }
 }
 @media (max-width:400px)
 {
    .content
    {
-       .swiper2 
-       {
-           height: 200px;
-       }
+    .swiper2  
+    {
+        height: 209px;
+        margin-top: 20px;
+        padding: 15px;
+        position: relative;
+        .swiper-slide 
+        {
+            background: none;
+            overflow: hidden;
+          
+            cursor: pointer;
+          
+            img 
+            {
+                width: 100%;
+                height: 100%;
+                transition: 0.4s;
+                z-index: 2;
+                
+            }
+        }
+        .sub__slide
+        {
+            width: 100%;
+            position: absolute;
+            height: 30%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        
+            padding: 10px;
+            transform: translateY(100%);
+            transition: 0.4s;
+            
+            .slide__heading 
+            {
+                color: $darkcolor;
+                margin-bottom: 0px;
+                font-size: 12px;
+                margin-top: 0px;
+               line-height: 16px;
+            }
+            .author 
+            {
+                color: $darkcolor;
+                font-size: 12px;
+                opacity: 0.5;
+                margin-bottom: 10px;
+
+            }
+            .price 
+            {
+                color: $darkcolor;
+
+            }
+        }
+        .list__icon 
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+        
+            li 
+            {
+                list-style: none;
+                background: $greencolor;
+                
+                padding: 5px;
+                text-align: center;
+                color: $lightcolor;
+                transition: 0.4s;
+                transform: translateX(-100%);
+                i 
+                {
+                    font-size: 14px;
+                }
+                
+            }
+           
+            li.second__delay
+            {
+                transition-delay: 0.1s;
+            }
+        }
+        .price__book 
+        {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translateX(100%);
+            transition: 0.4s;
+            p 
+            {
+                font-size: 10px;
+            }
+        }
+    }
    }
 }
-@media (min-width: 740px) and (max-width: 1023px) 
+@media (min-width: 740px) and (max-width: 1022px) 
 {
     .header
 {
@@ -405,6 +569,7 @@ $greycolor:#888;
         margin-top: 20px;
         padding: 15px;
         position: relative;
+
         .swiper-slide 
         {
             background: none;
@@ -419,22 +584,7 @@ $greycolor:#888;
                 z-index: 2;
                 
             }
-            &:hover img 
-            {
-                transform: scale(0.4);
-            }
-            &:hover .sub__slide
-            {
-                transform: translateY(0%);
-            }
-            &:hover   .list__icon li
-            {
-                transform: translateX(0%);
-            }
-            &:hover .price__book
-            {
-                transform: translateX(0%);
-            }
+    
         }
         .sub__slide
         {
@@ -452,10 +602,10 @@ $greycolor:#888;
             .slide__heading 
             {
                 color: $darkcolor;
-                margin-bottom: 10px;
+                margin-bottom: 5px;
                 font-size: 14px;
                 margin-top: 10px;
-               
+               line-height: 18px;
             }
             .author 
             {
@@ -538,8 +688,15 @@ $greycolor:#888;
     color: #fff;
     
 }
+.read__more-2 
+{
+    color: $darkcolor;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }
-@media (min-width: 1024px) and (max-width: 1239px) 
+}
+@media (min-width: 1023px) and (max-width: 1239px) 
 {
     .content
     {
@@ -563,22 +720,8 @@ $greycolor:#888;
                     z-index: 2;
                     
                 }
-                &:hover img 
-                {
-                    transform: scale(0.4);
-                }
-                &:hover .sub__slide
-                {
-                    transform: translateY(0%);
-                }
-                &:hover   .list__icon li
-                {
-                    transform: translateX(0%);
-                }
-                &:hover .price__book
-                {
-                    transform: translateX(0%);
-                }
+     
+        
             }
             .sub__slide
             {
@@ -596,10 +739,10 @@ $greycolor:#888;
                 .slide__heading 
                 {
                     color: $darkcolor;
-                    margin-bottom: 10px;
+               
                     font-size: 14px;
                     margin-top: 10px;
-                   
+                   margin-top: 0px;
                 }
                 .author 
                 {
@@ -655,6 +798,85 @@ $greycolor:#888;
                 }
             }
         }
+        .weekly__book
+        {
+            background: $lightcolor3;
+            padding: 10px;
+            margin-top: 80px;
+            .swiper3 
+            {
+              height: 300px;
+              margin-top: 50px;
+              margin-bottom: 80px;
+              .swiper-slide 
+              {
+                  background: none;
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  background: $lightcolor;
+                  padding: 20px;
+                  overflow: hidden;
+                  cursor: pointer;
+                  transition: 0.4s;
+                  &:hover  .weekly__price
+                  {
+                      transform: translateX(0);
+                  }
+                  &:hover 
+                  {
+                      transform: scale(1.02);
+                  }
+              }
+                img 
+                {
+                    width: 30%;
+                    height: 50%;
+      
+                }
+                .weekly__content
+                {
+                    padding: 10px;
+                    .weekly__heading 
+                    {
+                        margin-bottom: 5px;
+                        color: $greencolor;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+                    .author
+                    {
+                         font-size: $smallsize;
+                         color: $darkcolor;
+                         font-size: 12px;
+                         margin-bottom: 10px;
+                    }
+                    .weekly__price
+                    {
+                         margin-bottom: 10px;
+                         position: absolute;
+                         top: 0;
+                         right: 0;
+                         padding: 10px 14px;
+                         transform: translateX(100%);
+                         transition: 0.4s;
+                    }
+                    .weekly__about
+                    {
+                        line-height: $lineheight;
+                     
+                    }
+                }
+      
+            }
+        }
     }
-   
+    .read__more-2 
+    {
+        color: $darkcolor;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
 }
