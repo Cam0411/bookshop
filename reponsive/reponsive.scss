@@ -1,0 +1,660 @@
+$lightcolor:#fff;
+$darkcolor:#000;
+$greencolor:#27ae60;
+$lightcolor2:#f7f3f0;
+$smallsize:20px;
+$mediumsize:28px;
+$largesize:40px;
+$lineheight:25px;
+$greycolor:#888;
+
+@media (max-width: 739px) 
+{
+    .header
+{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $lightcolor;
+
+    padding: 5px;
+    overflow: hidden;
+    .header__logo 
+    {
+       
+        img 
+        {
+            width: 100px;
+            margin-left: -10px;
+        }
+    }
+    .nav 
+    {
+        text-align: right;
+        margin-top: 20px;
+        padding: 10px;
+        display: none;
+        li 
+        {
+            display: inline-block;
+            list-style: none;
+            line-height: $lineheight;
+            margin-left: 30px;
+            font-size: $mediumsize;
+            font-weight: 700;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            &:hover   .sub__nav 
+            {
+                transform: translateX(0%);
+            }
+            a
+            {
+                text-decoration: none;
+                color: $darkcolor;
+            }
+            .sub__nav 
+            {
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                bottom: 0;
+                left: 0;
+                background: $greencolor;
+                transform: translateX(-100%);
+                transition: 0.4s;
+            }
+        }
+    }
+    .nav__tablet 
+    {
+        text-align: right;
+        margin-top: 40px;
+         display: block;
+        li 
+        {
+           list-style: none;
+           display: inline-block;
+           cursor: pointer;
+           font-size: $smallsize;
+           margin-left: 30px;
+        }
+    }
+}
+.swiper  
+{
+    height: 87vh;
+    .swiper-slide 
+    {
+      .slider__left 
+      {
+          padding: 10px;
+          .slider__left-heading 
+          {
+              font-size: $mediumsize;
+              font-weight: 700;
+              margin-bottom: 10px;
+              line-height: 40px;
+              
+              color: $lightcolor;
+          }
+         .slider__about 
+         {
+             color: $lightcolor2;
+             opacity: 0.5;
+             line-height: $lineheight;
+             margin-bottom: 20px;
+             max-width: 350px;
+         }
+      }
+  
+    }
+   
+ 
+}
+.content
+    {
+        .best__book-sell
+        {
+            margin-top: 80px;
+            padding-left: 10px;
+            position: relative;
+            overflow: hidden;
+            width: 270px;
+            &:hover .sub__sell
+            {
+                transform: translateX(0%);
+            }
+            .best__book-heading 
+            {
+                color: $darkcolor;
+                font-size: 14px;
+                font-weight: 700;
+                overflow: hidden;
+               padding-bottom: 5px;
+               cursor: pointer;
+            }
+        }
+        .see__more-detail 
+        {
+            margin-top: 10px;
+            padding-left: 10px;
+            text-align: left;
+            cursor: pointer;
+            .see__more
+            {
+                color: $darkcolor;
+                font-size: 14px;
+                transition: 0.4s;
+                font-weight: 600;
+                &:hover 
+                {
+                    color:$greencolor;
+                }
+            }
+         
+        }
+        .swiper2  
+        {
+            height: 300px;
+            margin-top: 20px;
+            padding: 15px;
+            position: relative;
+            .swiper-slide 
+            {
+                background: none;
+                overflow: hidden;
+                cursor: pointer;
+              
+                img 
+                {
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.4s;
+                    z-index: 2;
+                    
+                }
+                &:hover img 
+                {
+                    transform: scale(0.4);
+                }
+                &:hover .sub__slide
+                {
+                    transform: translateY(0%);
+                }
+                &:hover   .list__icon li
+                {
+                    transform: translateX(0%);
+                }
+                &:hover .price__book
+                {
+                    transform: translateX(0%);
+                }
+            }
+            .sub__slide
+            {
+                width: 100%;
+                position: absolute;
+                height: 30%;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            
+                padding: 10px;
+                transform: translateY(100%);
+                transition: 0.4s;
+                
+                .slide__heading 
+                {
+                    color: $darkcolor;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    margin-top: 10px;
+                   
+                }
+                .author 
+                {
+                    color: $darkcolor;
+                    font-size: 12px;
+                    opacity: 0.5;
+                    margin-bottom: 10px;
+                }
+                .price 
+                {
+                    color: $darkcolor;
+
+                }
+            }
+            .list__icon 
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+            
+                li 
+                {
+                    list-style: none;
+                    background: $greencolor;
+                    
+                    padding: 5px;
+                    text-align: center;
+                    color: $lightcolor;
+                    transition: 0.4s;
+                    transform: translateX(-100%);
+                    i 
+                    {
+                        font-size: 14px;
+                    }
+                    
+                }
+               
+                li.second__delay
+                {
+                    transition-delay: 0.1s;
+                }
+            }
+            .price__book 
+            {
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translateX(100%);
+                transition: 0.4s;
+                p 
+                {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:400px)
+{
+   .content
+   {
+       .swiper2 
+       {
+           height: 200px;
+       }
+   }
+}
+@media (min-width: 740px) and (max-width: 1023px) 
+{
+    .header
+{
+    .header__logo 
+    {
+        img 
+        {
+            width: 100px;
+        }
+    }
+    .nav 
+    {
+        display: none;
+    }
+    .nav__tablet 
+    {
+        text-align: right;
+        margin-top: 40px;
+        display: block;
+        li 
+        {
+           list-style: none;
+           display: inline-block;
+           cursor: pointer;
+           font-size: $smallsize;
+           margin-left: 30px;
+        }
+    }
+}
+.swiper  
+{
+    .swiper-slide 
+    {
+      .slider__left 
+      {
+          padding: 10px;
+          .author
+          {
+              padding-left: 5px;
+              color: $greycolor;
+              margin-bottom: 0px;
+          }
+          .slider__left-heading 
+          {
+              font-size: $largesize;
+              font-weight: 700;
+              margin-bottom: 20px;
+              line-height: 55px;
+              
+              color: $lightcolor;
+          }
+         .slider__about 
+         {
+             color: $lightcolor2;
+             opacity: 0.5;
+             line-height: $lineheight;
+             margin-bottom: 20px;
+             max-width: 350px;
+         }
+      }
+  
+    }
+}
+.content
+{
+    .best__book-sell
+    {
+        margin-top: 80px;
+        padding-left: 10px;
+        position: relative;
+        overflow: hidden;
+        width: 270px;
+        &:hover .sub__sell
+        {
+            transform: translateX(0%);
+        }
+        .best__book-heading 
+        {
+            color: $darkcolor;
+            font-size: 22px;
+            font-weight: 700;
+            overflow: hidden;
+           padding-bottom: 5px;
+           cursor: pointer;
+        }
+        .sub__sell
+        {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0%;
+            background:$greencolor;
+            transform: translateX(-100%);
+            transition: 0.4s;
+        }
+    }
+    .see__more-detail 
+    {
+        margin-top: 85px;
+        padding-right: 10px;
+        text-align: right;
+        cursor: pointer;
+        .see__more
+        {
+            color: $darkcolor;
+            font-size: 14px;
+            transition: 0.4s;
+            font-weight: 600;
+            &:hover 
+            {
+                color:$greencolor;
+            }
+        }
+     
+    }
+    .swiper2  
+    {
+        height: 250px;
+        margin-top: 20px;
+        padding: 15px;
+        position: relative;
+        .swiper-slide 
+        {
+            background: none;
+            overflow: hidden;
+            cursor: pointer;
+          
+            img 
+            {
+                width: 100%;
+                height: 100%;
+                transition: 0.4s;
+                z-index: 2;
+                
+            }
+            &:hover img 
+            {
+                transform: scale(0.4);
+            }
+            &:hover .sub__slide
+            {
+                transform: translateY(0%);
+            }
+            &:hover   .list__icon li
+            {
+                transform: translateX(0%);
+            }
+            &:hover .price__book
+            {
+                transform: translateX(0%);
+            }
+        }
+        .sub__slide
+        {
+            width: 100%;
+            position: absolute;
+            height: 30%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        
+            padding: 10px;
+            transform: translateY(100%);
+            transition: 0.4s;
+            
+            .slide__heading 
+            {
+                color: $darkcolor;
+                margin-bottom: 10px;
+                font-size: 14px;
+                margin-top: 10px;
+               
+            }
+            .author 
+            {
+                color: $darkcolor;
+                font-size: 12px;
+                opacity: 0.5;
+                margin-bottom: 10px;
+            }
+            .price 
+            {
+                color: $darkcolor;
+
+            }
+        }
+        .list__icon 
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+        
+            li 
+            {
+                list-style: none;
+                background: $greencolor;
+                
+                padding: 5px;
+                text-align: center;
+                color: $lightcolor;
+                transition: 0.4s;
+                transform: translateX(-100%);
+                i 
+                {
+                    font-size: 14px;
+                }
+                
+            }
+           
+            li.second__delay
+            {
+                transition-delay: 0.1s;
+            }
+        }
+        .price__book 
+        {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translateX(100%);
+            transition: 0.4s;
+            p 
+            {
+                font-size: 12px;
+            }
+        }
+    
+}
+  
+}
+
+.read__more
+{
+     line-height: 25px;
+     font-weight: 700;
+    color: #000;
+    padding: 10px 14px;
+    transition: color 0.4s linear;
+    width: 150px;
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: $smallsize;
+     border: 1px solid$greencolor;
+    z-index: 2;
+    color: $lightcolor;
+    overflow: hidden;
+}
+.read__more:hover 
+{
+    color: #fff;
+    
+}
+}
+@media (min-width: 1024px) and (max-width: 1239px) 
+{
+    .content
+    {
+        .swiper2  
+        {
+            height: 270px;
+            margin-top: 20px;
+            padding: 15px;
+            position: relative;
+            .swiper-slide 
+            {
+                background: none;
+                overflow: hidden;
+                cursor: pointer;
+              
+                img 
+                {
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.4s;
+                    z-index: 2;
+                    
+                }
+                &:hover img 
+                {
+                    transform: scale(0.4);
+                }
+                &:hover .sub__slide
+                {
+                    transform: translateY(0%);
+                }
+                &:hover   .list__icon li
+                {
+                    transform: translateX(0%);
+                }
+                &:hover .price__book
+                {
+                    transform: translateX(0%);
+                }
+            }
+            .sub__slide
+            {
+                width: 100%;
+                position: absolute;
+                height: 30%;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            
+                padding: 10px;
+                transform: translateY(100%);
+                transition: 0.4s;
+                
+                .slide__heading 
+                {
+                    color: $darkcolor;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    margin-top: 10px;
+                   
+                }
+                .author 
+                {
+                    color: $darkcolor;
+                    font-size: 12px;
+                    opacity: 0.5;
+                    margin-bottom: 10px;
+                }
+                .price 
+                {
+                    color: $darkcolor;
+
+                }
+            }
+            .list__icon 
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+            
+                li 
+                {
+                    list-style: none;
+                    background: $greencolor;
+                    
+                    padding: 5px;
+                    text-align: center;
+                    color: $lightcolor;
+                    transition: 0.4s;
+                    transform: translateX(-100%);
+                    i 
+                    {
+                        font-size: 14px;
+                    }
+                    
+                }
+               
+                li.second__delay
+                {
+                    transition-delay: 0.1s;
+                }
+            }
+            .price__book 
+            {
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translateX(100%);
+                transition: 0.4s;
+                p 
+                {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+   
+}
