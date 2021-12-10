@@ -558,19 +558,32 @@ $lineheight:25px;
          .review 
          {
              color: $lightcolor;
-             line-height: $lineheight;
-             font-size: 18px;
+             line-height: 35px;
+             font-size: 20px;
           margin-bottom: 20px;
+          opacity: 0.6;
          }
          .author 
          {
              color: $lightcolor;
+             font-weight: 700;
+             margin-bottom: 10px;
+             font-size: 18px;
          }
 
       }
   }
+  .sale__off 
+  {
+      height: 200px;
+      background: $lightcolor;
+  }
 }
-
+.footer 
+{
+    height: 500px;
+    background: $lightcolor3;
+}
 .read__more
 {
      line-height: 25px;

@@ -585,13 +585,27 @@
 
 .content .review__bookshops .review__content .review {
   color: #fff;
-  line-height: 25px;
-  font-size: 18px;
+  line-height: 35px;
+  font-size: 20px;
   margin-bottom: 20px;
+  opacity: 0.6;
 }
 
 .content .review__bookshops .review__content .author {
   color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.content .sale__off {
+  height: 200px;
+  background: #fff;
+}
+
+.footer {
+  height: 500px;
+  background: #f8f9fa;
 }
 
 .read__more {
