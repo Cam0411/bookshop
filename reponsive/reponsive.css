@@ -686,8 +686,8 @@
             transform: scale(1.02);
   }
   .content .weekly__book .swiper3 img {
-    width: 30%;
-    height: 50%;
+    width: 35%;
+    height: 100%;
   }
   .content .weekly__book .swiper3 .weekly__content {
     padding: 10px;
