@@ -1082,6 +1082,15 @@
 }
 
 .modal__search .modal__close i {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.modal__search .modal__close i:hover {
+  color: red;
+}
+
+.modal__search .modal__close i {
   color: #000;
   font-size: 30px;
 }
