@@ -436,6 +436,7 @@ $greycolor:#888;
 }
 .modal 
 {
+    opacity: 0;
     .content__modal
     {
         width: 100%;
@@ -443,7 +444,7 @@ $greycolor:#888;
 }
 .modal.open 
 {
-
+opacity: 1;
  transform: translateX(0);
 }
 
@@ -467,7 +468,7 @@ $greycolor:#888;
 {
    .content__user 
    {
-       width: 100%;
+       width: 300px;
    }
 }
 
@@ -591,6 +592,14 @@ $greycolor:#888;
         }
     } 
    }
+   .modal__user 
+{
+   .content__user 
+   {
+       width: 300px;
+   }
+}
+
 }
 @media (min-width: 740px) and (max-width: 1022px) 
 {

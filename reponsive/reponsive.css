@@ -343,10 +343,14 @@
     margin-left: 0;
     padding: 10px;
   }
+  .modal {
+    opacity: 0;
+  }
   .modal .content__modal {
     width: 100%;
   }
   .modal.open {
+    opacity: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
@@ -368,7 +372,7 @@
     display: flex;
   }
   .modal__user .content__user {
-    width: 100%;
+    width: 300px;
   }
 }
 
@@ -466,6 +470,9 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+  .modal__user .content__user {
+    width: 300px;
   }
 }
 
