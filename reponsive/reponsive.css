@@ -249,9 +249,24 @@
   .content .weekly__book .swiper3 .weekly__content {
     padding: 10px;
   }
+  .content .weekly__book .swiper3 .weekly__content .swiper-slide:hover .icon__list li {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  .content .weekly__book .swiper3 .weekly__content .icon__list {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 0;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .content .weekly__book .swiper3 .weekly__content .icon__list li {
+    -webkit-transform: none;
+            transform: none;
+  }
   .content .weekly__book .swiper3 .weekly__content .weekly__heading {
     margin-bottom: 5px;
-    color: #27ae60;
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
@@ -278,8 +293,82 @@
     line-height: 25px;
     font-size: 14px;
   }
+  .content .popular__author {
+    text-align: center;
+  }
   .content .popular__author .popluar__heading {
     font-size: 18px;
+  }
+  .content .popular__author .contain__box {
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content .review__bookshops .review__content .review {
+    font-size: 18px;
+  }
+  .footer .newsletter__heading {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 25px;
+  }
+  .footer .newsletter__about {
+    opacity: 0.4;
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-size: 16px;
+  }
+  .footer .form__footer .email__btn {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .footer .form__footer .submit__btn {
+    width: 90%;
+  }
+  .footer .footer__main-2 {
+    margin-top: 40px;
+  }
+  .footer .footer__main-2 .footer__storyshop {
+    padding: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  .footer .footer__main-2 .footer__information {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .footer .footer__main-2 .footer__contact {
+    margin-left: 0;
+    padding: 10px;
+  }
+  .modal .content__modal {
+    width: 100%;
+  }
+  .modal.open {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .add__background {
+    background: #0004;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+    -webkit-animation: fadeIn 0.4s ease-in-out;
+            animation: fadeIn 0.4s ease-in-out;
+    display: none;
+  }
+  .add__background.open2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .modal__user .content__user {
+    width: 100%;
   }
 }
 
@@ -365,6 +454,18 @@
   }
   .content .swiper2 .price__book p {
     font-size: 10px;
+  }
+  .content .popular__author {
+    text-align: center;
+  }
+  .content .popular__author .popluar__heading {
+    font-size: 18px;
+  }
+  .content .popular__author .contain__box {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -538,6 +639,52 @@
   .content .swiper2 .price__book p {
     font-size: 12px;
   }
+  .content .weekly__book {
+    background: #f8f9fa;
+    padding: 10px;
+    margin-top: 80px;
+  }
+  .content .weekly__book .swiper3 {
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+  .content .weekly__book .swiper3 .swiper-slide {
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #fff;
+    padding: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .content .weekly__book .swiper3 .swiper-slide:hover .weekly__price {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .content .weekly__book .swiper3 .swiper-slide:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  .content .weekly__book .swiper3 img {
+    width: 35%;
+    height: 100%;
+  }
+  .content .weekly__book .swiper3 .weekly__content .icon__list {
+    position: absolute;
+    bottom: 2%;
+    z-index: 0;
+    left: 10.5%;
+  }
   .read__more {
     line-height: 25px;
     font-weight: 700;
@@ -564,6 +711,53 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+  }
+  .footer .form__footer .email__btn {
+    width: 400px;
+  }
+  .footer .footer__main-2 {
+    margin-top: 40px;
+  }
+  .footer .footer__main-2 .footer__storyshop {
+    padding: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  .footer .footer__main-2 .footer__information {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .footer .footer__main-2 .footer__contact {
+    margin-left: 0;
+    padding: 10px;
+  }
+  .modal.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .content__modal.open2 {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .add__background {
+    background: #0004;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+    -webkit-animation: fadeIn 0.4s ease-in-out;
+            animation: fadeIn 0.4s ease-in-out;
+    display: none;
+  }
+  .add__background.open2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -692,9 +886,14 @@
   .content .weekly__book .swiper3 .weekly__content {
     padding: 10px;
   }
+  .content .weekly__book .swiper3 .weekly__content .icon__list {
+    position: absolute;
+    bottom: 2%;
+    z-index: 0;
+    left: 12.8%;
+  }
   .content .weekly__book .swiper3 .weekly__content .weekly__heading {
     margin-bottom: 5px;
-    color: #27ae60;
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
@@ -724,6 +923,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+  }
+  .footer .form__footer .email__btn {
+    width: 400px;
   }
 }
 /*# sourceMappingURL=reponsive.css.map */
