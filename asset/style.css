@@ -652,6 +652,10 @@
   cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 .footer .form__footer .submit__btn:hover {
@@ -997,6 +1001,7 @@
   padding: 8px 10px;
   margin-bottom: 20px;
   cursor: pointer;
+  border-radius: 0;
 }
 
 .modal__user .content__user .forgot__heading {

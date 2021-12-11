@@ -633,6 +633,9 @@ $lineheight:25px;
             border: 2px solid $greencolor;
             cursor: pointer;
             transition: 0.4s;
+            appearance: none;
+            -webkit-appearance:none; 
+            border-radius:0;
             &:hover 
             {
                 background: $darkcolor;
@@ -960,6 +963,7 @@ $lineheight:25px;
              padding: 8px 10px;
              margin-bottom: 20px;
              cursor: pointer;
+             border-radius:0;
          }
          .forgot__heading 
          {
