@@ -622,7 +622,7 @@ $lineheight:25px;
             width: 600px;
             padding: 8px 10px;
             outline: none;
-          
+            border-radius:0;
         }
         .submit__btn 
         {
@@ -912,6 +912,7 @@ $lineheight:25px;
                  outline: none;
                  padding: 8px 10px;
                  margin-bottom: 10px;
+                 border-radius:0;
                  cursor: pointer;
              }
          }
@@ -931,6 +932,7 @@ $lineheight:25px;
                  outline: none;
                  padding: 8px 10px;
                  margin-bottom: 10px;
+                 border-radius:0;
                  cursor: pointer;
              }
          }
@@ -948,6 +950,7 @@ $lineheight:25px;
            input 
            {
             cursor: pointer;
+            border-radius:0;
            }
          }
          .submit__btn 
