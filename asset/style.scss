@@ -623,6 +623,7 @@ $lineheight:25px;
             padding: 8px 10px;
             outline: none;
             border-radius:0;
+            border: 2px solid $lightcolor;
         }
         .submit__btn 
         {
@@ -808,7 +809,7 @@ $lineheight:25px;
   .modal 
   {
     position: fixed;
-  
+    
     top: 0;
     left: 0;
     right: 0;
@@ -876,6 +877,7 @@ $lineheight:25px;
        display: flex;
        justify-content: center;
        align-items: center;
+      
        transition: 0.4s;
        transform: translateX(-100%);
        opacity: 0;
@@ -1006,10 +1008,82 @@ $lineheight:25px;
           }
       }
   }
+  .modal__search
+  {
+        position: fixed;
+        z-index: 999999;
+        transform: translateX(100%);
+        top: 0;
+        left: 0;
+        right: 0;
+        transition: 0.4s;
+        bottom: 0;
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        opacity: 0;
+        .content__search 
+        {
+            width: 30%;
+            background: $lightcolor;
+            height: 100%;
+        }
+        .modal__close 
+        {
+            padding: 10px;
+         
+            cursor: pointer;
+            i 
+            {
+                color: $darkcolor;
+                font-size: 30px;
+              
+            }
+        }
+        .search__form 
+        {
+            border-bottom: 2px solid $darkcolor;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            appearance: none;
+            i 
+            {
+                font-size:16px;
+                padding-bottom: 5px;
+            
+            }
+        }
+        .search__btn
+        {
+            width: 80%;
+            outline: none;
+            margin-top: 80px;
+            border:none ;
+        
+        }
+  }
 .modal__user.open 
 {
     transform: translateX(0);
     opacity: 1;
+}
+.add__background 
+{
+  background: #0004;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99999;
+  animation: fadeIn 0.4s ease-in-out;
+  display: none;
+}
+.add__background.open2 
+{
+    display: block;
 }
 @keyframes fadeIn {
   from{
@@ -1017,4 +1091,9 @@ $lineheight:25px;
   }to {
     opacity: 1;
   }
+}
+.modal__search.open 
+{
+    transform: translateX(0);
+    opacity: 1;
 }
