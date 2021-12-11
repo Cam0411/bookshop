@@ -32,3 +32,23 @@ for (const user of users){
   user.addEventListener("click",openModal2)
 }
 closeUser.addEventListener("click",closeModal2)
+
+// open modal search 
+
+
+searchs = document.querySelectorAll(".search")
+modalsearch = document.querySelector(".modal__search")
+closesearch = document.querySelector(".close__3")
+modalbackground = document.querySelector(".add__background")
+function openModal3(){
+  modalsearch.classList.add("open")
+  modalbackground.classList.add("open2")
+}
+function closeModal3(){
+  modalsearch.classList.remove("open")
+  modalbackground.classList.remove("open2")
+}
+for (const search of searchs){
+  search.addEventListener("click",openModal3)
+}
+closesearch.addEventListener("click",closeModal3)
