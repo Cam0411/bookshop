@@ -16,7 +16,9 @@
 </head>
 <body>
     <!-- header -->
+    <div id="header__link"></div>
     <div class="header">
+     
         <div class="grid wide">
             <div class="row">
                 <div class="col l-4 m-4 c-4">
@@ -687,6 +689,7 @@
   </div>
 </div>
 </div>
+<!-- menu reponsive -->
 <div class="modal">
   <div class="content__modal">
     <div class="content__close">  <i class="close fas fa-times"></i></div>
@@ -699,6 +702,7 @@
       </ul>
   </div>
 </div>
+<!-- login -->
 <div class="modal__user">
   <div class="content__close">  <i class="close__2 fas fa-times"></i>    </div>
   <div class="content__user">
@@ -723,6 +727,7 @@
       
 </div>
 </div>
+<!-- search -->
 <div class="modal__search">
   <div class="content__search">
   <div class="modal__close">
@@ -733,9 +738,8 @@
     </div>
   </div>
     </div>
-
-  </div>
-</div>
+    <a href="#header__link"> <div class="to__top">  <i class="fas fa-chevron-up"></i> </div> </a>
+    <!-- to top -->
 <div class="add__background"></div>
 <script src="main/main.js"></script>
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -837,7 +841,42 @@
         },
       });
         </script>
+<script>
 
-      
+var totop = document.querySelector(".to__top")
+       window.addEventListener("scroll",() =>{
+           if (window.pageYOffset > 100){
+               totop.classList.add("active")
+           } else{
+               totop.classList.remove("active")
+       }})
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </body>
 </html>
