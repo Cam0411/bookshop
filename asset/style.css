@@ -1012,6 +1012,9 @@
 .modal__user .content__user .forgot__heading {
   font-size: 13px;
   margin-bottom: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal__user .content__user .account__heading {
