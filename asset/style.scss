@@ -1111,3 +1111,44 @@ $lineheight:25px;
     transform: translateX(0);
     opacity: 1;
 }
+
+
+.to__top 
+{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    background: $greencolor;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+
+    transition: 0.4s;
+   z-index: 999999;
+   opacity: 0;
+   display: none;
+    &:hover 
+    {
+      opacity: 0.2;
+    }
+}
+.to__top a
+{
+    color: #fff ;
+}
+.to__top.active 
+{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeup linear 0.4s;
+    animation: 0.4s  fadeIn ease-in-out;
+   opacity: 1;
+}
