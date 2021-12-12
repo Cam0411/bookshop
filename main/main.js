@@ -21,17 +21,17 @@ modalClose.addEventListener("click",closeModal)
 
 users = document.querySelectorAll(".user")
 modalUser = document.querySelector(".modal__user")
-closeUser = document.querySelector(".close__2")
-function openModal2(){
+closeuser = document.querySelector(".close__2")
+function openUser(){
   modalUser.classList.add("open")
 }
-function closeModal2(){
+function closeUser(){
   modalUser.classList.remove("open")
 }
 for (const user of users){
-  user.addEventListener("click",openModal2)
+  user.addEventListener("click",openUser)
 }
-closeUser.addEventListener("click",closeModal2)
+closeuser.addEventListener("click",closeUser)
 
 // open modal search 
 
@@ -40,15 +40,15 @@ searchs = document.querySelectorAll(".search")
 modalsearch = document.querySelector(".modal__search")
 closesearch = document.querySelector(".close__3")
 modalbackground = document.querySelector(".add__background")
-function openModal3(){
+function openSearch(){
   modalsearch.classList.add("open")
   modalbackground.classList.add("open2")
 }
-function closeModal3(){
+function closeSearch(){
   modalsearch.classList.remove("open")
   modalbackground.classList.remove("open2")
 }
 for (const search of searchs){
-  search.addEventListener("click",openModal3)
+  search.addEventListener("click",openSearch)
 }
-closesearch.addEventListener("click",closeModal3)
+closesearch.addEventListener("click",closeSearch)
