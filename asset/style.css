@@ -1189,7 +1189,6 @@
   cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  z-index: 999999;
   opacity: 0;
   display: none;
 }
