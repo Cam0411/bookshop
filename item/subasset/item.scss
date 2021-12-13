@@ -141,6 +141,16 @@ $lineheight:25px;
             {
                 color: $greencolor;
             }
+            a 
+            {
+                color: $darkcolor;
+                text-decoration: none;
+                transition: 0.4s;
+                &:hover 
+                {
+                    color: $greencolor;
+                }
+            }
         }
     }
     .item__img 
@@ -217,7 +227,7 @@ $lineheight:25px;
       border: 0.2px solid $greycolor;
       border-bottom: none;
       height: auto;
-  
+      margin-top: 20px;
       .item__table-container
       {
         display: flex;
