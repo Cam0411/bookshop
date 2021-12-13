@@ -413,7 +413,7 @@ $lineheight:25px;
                 text-align: center;
                 color: $lightcolor;
                 transition: 0.4s;
-                transform: translateX(-100%);
+                transform: translateX(-120%);
                 &:hover 
                 {
                     background: $darkcolor;
@@ -980,7 +980,7 @@ $lineheight:25px;
     border-radius: 50%;
     font-size: 20px;
     cursor: pointer;
-
+    z-index: 2;
     transition: 0.4s;
 
    opacity: 0;

@@ -412,8 +412,8 @@
   color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
 }
 
 .content .swiper2 .list__icon li:hover {
@@ -1016,6 +1016,7 @@
   border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
+  z-index: 2;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   opacity: 0;
