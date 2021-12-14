@@ -126,6 +126,7 @@
   cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  line-height: 25px;
 }
 
 .content .title__nav li:hover {
@@ -158,6 +159,7 @@
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 10px;
+  line-height: 40px;
 }
 
 .content .item__display .item__contain-author {
@@ -168,7 +170,7 @@
 }
 
 .content .item__display .item__contain-price {
-  font-size: 25px;
+  font-size: 20px;
   margin-left: 5px;
   margin-bottom: 15px;
 }
@@ -721,6 +723,10 @@
   color: red;
 }
 
+.modal .content__modal .modal__nav {
+  overflow: hidden;
+}
+
 .modal .content__modal .modal__nav li {
   line-height: 45px;
   margin-bottom: 10px;
@@ -730,9 +736,16 @@
   cursor: pointer;
   font-size: 20px;
   font-weight: 700;
+  position: relative;
+  cursor: pointer;
 }
 
 .modal .content__modal .modal__nav li:hover {
+  color: #27ae60;
+}
+
+.modal .content__modal .modal__nav li a {
+  text-decoration: none;
   color: #27ae60;
 }
 
