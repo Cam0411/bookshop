@@ -746,10 +746,10 @@
 
 .modal .content__modal .modal__nav li a {
   text-decoration: none;
-  color: #27ae60;
+  color: #000;
 }
 
-.modal .content__modal .modal__nav li.changeColor {
+.modal .content__modal .modal__nav li.changeColor a {
   color: #27ae60;
 }
 

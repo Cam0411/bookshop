@@ -727,10 +727,10 @@ $lineheight:25px;
          a
          {
              text-decoration: none;
-             color: $greencolor;
+             color: $darkcolor;
          }
        }
-       li.changeColor 
+       li.changeColor a
        {
          color: $greencolor;
        }
