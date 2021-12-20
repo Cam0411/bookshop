@@ -1,0 +1,510 @@
+$lightcolor:#fff;
+$darkcolor:#000;
+$greencolor:#27ae60;
+$lightcolor2:#f7f3f0;
+$lightcolor3:#f8f9fa;
+$smallsize:20px;
+$mediumsize:28px;
+$largesize:30px;
+$lineheight:25px;
+$greycolor:#888;
+
+@media (max-width: 739px) 
+{
+    .header
+{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $lightcolor;
+
+    padding: 5px;
+    overflow: hidden;
+    .header__logo 
+    {
+       
+        img 
+        {
+            width: 100px;
+            margin-left: -10px;
+        }
+    }
+    .nav 
+    {
+        text-align: right;
+        margin-top: 20px;
+        padding: 10px;
+        display: none;
+        li 
+        {
+            display: inline-block;
+            list-style: none;
+            line-height: $lineheight;
+            margin-left: 30px;
+            font-size: $mediumsize;
+            font-weight: 700;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            &:hover   .sub__nav 
+            {
+                transform: translateX(0%);
+            }
+            a
+            {
+                text-decoration: none;
+                color: $darkcolor;
+            }
+            .sub__nav 
+            {
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                bottom: 0;
+                left: 0;
+                background: $greencolor;
+                transform: translateX(-100%);
+                transition: 0.4s;
+            }
+        }
+    }
+    .nav__tablet 
+    {
+        text-align: right;
+        margin-top: 40px;
+         display: block;
+        li 
+        {
+           list-style: none;
+           display: inline-block;
+           cursor: pointer;
+           font-size: $smallsize;
+           margin-left: 30px;
+        }
+    }
+}
+.content 
+{
+
+ .about__information 
+ {
+     padding: 50px 10px 50px 10px;
+   
+ }
+ .about__heading-more
+ {
+     margin-left: 2px;
+
+ }
+ .about__heading 
+ {
+     font-size: 20px;
+  margin-left: 0px;
+ }
+ .sub__heading-2 
+ {
+   margin-left: 0px;
+ }
+ .contact__list 
+ {
+  padding: 10px 0px;
+   .contact__nav 
+   {
+     margin-bottom: 10px;
+     li 
+     {
+       font-size: 14px;
+       line-height: $lineheight;
+     }
+   }
+   
+ }
+ .social__list li
+ {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: 0.4s;
+    margin-left: 2px;
+    &:hover 
+    {
+      color: $greencolor;
+    }
+ }
+ .form__box 
+ {
+   padding: 0px 0px 10px 0px;
+ }
+.contact__name 
+{
+ 
+  input 
+  {
+    margin-bottom: 20px;
+  }
+  
+}
+
+.submit__btn 
+{
+  margin-left: 4px;
+}
+}
+    .footer 
+{
+    .newsletter__heading 
+    {
+ 
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        line-height: $lineheight;
+    }
+    .newsletter__about 
+    {
+       opacity: 0.4;
+       margin-bottom: 20px;
+       line-height: $lineheight;
+       font-size: 16px;
+    }
+    .form__footer 
+    {
+        .email__btn 
+        {
+            width: 90%;
+            margin-bottom: 20px;
+        }
+        .submit__btn 
+       {
+           width: 90%;
+       }
+    }
+    .footer__main-2 
+    {
+      margin-top: 40px;
+       .footer__storyshop 
+       {
+         padding: 10px;
+         margin-left: 0px;
+         margin-bottom: 10px;
+       } 
+       .footer__information 
+      {
+    
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .footer__contact 
+      {
+        margin-left: 0;
+        padding: 10px;
+      }
+       }
+}
+.modal 
+{
+    opacity: 0;
+    .content__modal
+    {
+        width: 100%;
+    }
+}
+.modal.open 
+{
+opacity: 1;
+ transform: translateX(0);
+}
+
+.add__background 
+{
+  background: #0004;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99999;
+  animation: fadeIn 0.4s ease-in-out;
+  display: none;
+}
+.add__background.open2 
+{
+  display: flex;
+}
+.modal__user 
+{
+   .content__user 
+   {
+       width: 300px;
+   }
+}
+.modal__search 
+{
+    .content__search
+    {
+        width: 100%;
+    }
+}
+}
+@media (max-width:400px)
+{
+ 
+   .modal__user 
+{
+   .content__user 
+   {
+       width: 300px;
+   }
+}
+
+}
+@media (min-width: 740px) and (max-width: 1023.8px) 
+{
+    .header
+{
+    .header__logo 
+    {
+        img 
+        {
+            width: 100px;
+        }
+    }
+    .nav 
+    {
+        display: none;
+    }
+    .nav__tablet 
+    {
+        text-align: right;
+        margin-top: 40px;
+        display: block;
+        li 
+        {
+           list-style: none;
+           display: inline-block;
+           cursor: pointer;
+           font-size: $smallsize;
+           margin-left: 30px;
+        }
+    }
+}
+
+.content 
+{
+    .about__information 
+    {
+        padding: 50px 20px;
+    }
+ .about__heading-more
+ {  
+     margin-left: 2px;
+ }
+ .about__heading 
+ {
+     margin-left: 1px;
+ }
+ .sub__heading-2 
+ {
+   margin-left: 0px;
+ }
+ .contact__list 
+ {
+  padding: 10px 0px;
+   .contact__nav 
+   {
+     margin-bottom: 10px;
+     li 
+     {
+       font-size: 14px;
+       line-height: $lineheight;
+     }
+   }
+   
+ }
+ .social__list li
+ {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: 0.4s;
+    margin-left: 2px;
+    &:hover 
+    {
+      color: $greencolor;
+    }
+ }
+ .form__box 
+ {
+   padding: 0px 0px 10px 0px;
+ }
+.contact__name 
+{
+  label 
+  {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  input 
+  {
+    width: 100%;
+    padding: 8px 10px;
+  }
+  
+}
+.submit__btn 
+{
+
+  margin-left: 11px;
+}
+}
+.footer 
+{
+    .form__footer 
+    {
+        .email__btn 
+        {
+            width: 400px;
+        }
+    }
+    .footer__main-2 
+    {
+      margin-top: 40px;
+       .footer__storyshop 
+       {
+         padding: 10px;
+         margin-left: 0px;
+         margin-bottom: 10px;
+       } 
+       .footer__information 
+      {
+    
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .footer__contact 
+      {
+        margin-left: 0;
+        padding: 10px;
+      }
+       }
+}
+.modal.open 
+{
+  display: flex;
+ transform: translateX(0);
+}
+.content__modal.open2
+{
+    transform: translateX(0);
+}
+.add__background 
+{
+  
+  display: none;
+}
+.add__background.open2 
+{
+  display: flex;
+}
+.modal__search 
+{
+    .content__search
+    {
+        width: 50%;
+    }
+}
+}
+@media (min-width: 1024px) and (max-width: 1239px) 
+{
+ 
+    .footer 
+    {
+        .form__footer 
+        {
+            .email__btn 
+            {
+                width: 400px;
+            }
+        }
+    }
+    .content 
+    {
+        .about__information 
+        {
+            padding: 50px 20px;
+        }
+        .about__heading 
+        {
+            margin-left: 1px;
+        }
+     .about__heading-more
+     {  
+         margin-left: 3px;
+     }
+     .sub__heading
+     {
+       margin-left: 2px;
+     }
+     .sub__heading-2 
+     {
+       margin-left: 0px;
+     }
+     .contact__list 
+     {
+      padding: 10px 0px;
+       .contact__nav 
+       {
+         margin-bottom: 10px;
+         li 
+         {
+           font-size: 14px;
+           line-height: $lineheight;
+         }
+       }
+       
+     }
+     .social__list li
+     {
+        display: inline-block;
+        margin-right: 10px;
+        cursor: pointer;
+        margin-bottom: 25px;
+        transition: 0.4s;
+        margin-left: 2px;
+        &:hover 
+        {
+          color: $greencolor;
+        }
+     }
+     .form__box 
+     {
+       padding: 0px 0px 10px 0px;
+     }
+    .contact__name 
+    {
+      label 
+      {
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+      input 
+      {
+        width: 100%;
+        padding: 8px 10px;
+      }
+      
+    }
+    .submit__btn 
+    {
+    
+      margin-left: 11px;
+    }
+    }
+}
